@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>NeoPlay - Web Player: Your sound, reborn</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <!-- LEFT SIDEBAR -->
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="close">
+            </div>
+
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img src="img/logo.jpg" class="newlogo" alt="NeoPlay Logo">NeoPlay
+                </div>
+                <div class="searchbar-container">
+                    <input type="search" id="searchInput" placeholder="Search playlists... ⯱">
+                    <button id="homeBtn">Home</button>
+                </div>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="Playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul></ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="#">Legal</a></div>
+                    <div><a href="#">Privacy Center</a></div>
+                    <div><a href="#">Privacy Policy</a></div>
+                    <div><a href="#">Cookies</a></div>
+                    <div><a href="#">About Ads</a></div>
+                    <div><a href="#">Accessibility</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT MAIN -->
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 6L9.7 11.3c-.3.3-.5.5-.5.7s.2.4.5.7L15 18" stroke="#ffffff" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18l5.3-5.3c.3-.3.5-.5.5-.7s-.2-.4-.5-.7L9 6" stroke="#ffffff" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div> Hello Bro! </div>
+                    <div> ♬ Welcome to Neoplay ♬ </div>
+                    <div> 𝄞 Feel Every Beat 𝄞 </div>
+                    <div>𝄆Your Sound, Your World 𝄇</div>
+                    <div>NeoPlay: Step in, tune up, let your sound be reborn. </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- PLAYLIST CARDS -->
+            <div class="spotifyplaylist">
+                <div class="rightLyricsHead">
+                    <h1>NeoPlay Station</h1>
+
+                    <!-- Lyrics Bar -->
+                    <div class="lyrics-bar">
+                        <button class="toggle-lyrics">Show Lyrics</button>
+
+                    </div>
+                </div>
+
+                <div class="cardcontainer">
+                    <div class="lyrics-container hidden">
+                    </div>
+
+                    <div data-folder="acs" class="card ac">
+                        <div class="play" data-song="song1.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download4.jpg" alt="">
+                        <h2>Feel-Good Vibes</h2>
+                        <p>Uplifting tunes to brighten your mood</p>
+                    </div>
+
+                    <div data-folder="ncs" class="card nc">
+                        <div class="play" data-song="song2.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download3.jpg" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+
+                    <div data-folder="ccs" class="card cc">
+                        <div class="play" data-song="song2.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download2.jpg" alt="">
+                        <h2>Chill & Relax</h2>
+                        <p>Smooth beats for unwinding and de-stressing</p>
+                    </div>
+
+                    <div data-folder="bcs" class="card bc">
+                        <div class="play" data-song="song1.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download.jpg" alt="">
+                        <h2>Latest Bengali Vibes</h2>
+                        <p>Enjoy the newest Bengali hits all in one playlist</p>
+                    </div>
+
+                    <div data-folder="jcs" class="card jc">
+                        <div class="play" data-song="song1.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download6.jpg" alt="">
+                        <h2>Latest Hindi Hits</h2>
+                        <p>Fresh beats to set your mood on fire</p>
+                    </div>
+
+                    <div data-folder="ocs" class="card oc">
+                        <div class="play" data-song="song1.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download5.jpg" alt="">
+                        <h2>Old Songs – Timeless Classics</h2>
+                        <p>Timeless melodies to stir your soul</p>
+                    </div>
+                    <div data-folder="scs" class="card sc">
+                        <div class="play" data-song="song1.mp3">
+                            <img src="img/play1.svg" alt="Play">
+                        </div>
+                        <img src="img\download7.jpg" alt="">
+                        <h2>Sushant Singh Rajput</h2>
+                        <p>The Everlasting Memories</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- PLAYER -->
+            <div class="anubhav">
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img id="backward" class="forback" src="img/ten-second (1).png" alt="back">
+                            <img width="35" id="previous" src="img/previous.svg" alt="Previous">
+                            <img width="35" id="play" src="img/play.svg" alt="Play/Pause">
+                            <img width="35" id="next" src="img/next.svg" alt="Next">
+                            <img id="forward" class="forback" src="img\ten-second.png" alt="forward">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img width="30" src="img/volume.svg" alt="Volume">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end right -->
+    </div> <!-- end container -->
+
+
+
+
+    <!-- Login/Signup Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="closeModal">&times;</span>
+            <div class="tabs">
+                <button id="loginTab" class="active">Login</button>
+                <button id="signupTab">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="formBox">
+                <h2>Welcome back! You’re all set to dive in.</h2>
+                <input type="text" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+
+            <!-- Sign Up Form -->
+            <form id="signupForm" class="formBox hidden">
+                <h2>Join the vibes! Let’s get you started.</h2>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <p id="popupMessage"></p>
+        <span id="closePopup">&times;</span>
+    </div>
+
+
+    <script type="module" src="engine.js"></script>
+    <script type="module" src="SongLyrics.js"></script>
+</body>
+
+</html>
