@@ -55,3 +55,6 @@ Ensure your music directory is structured as follows:
 │   ├── ncs/ (Happy Hits)
 │   └── ...
 └── img/ (Icons and Logos)
+## 🎥 Demo Video
+
+▶️ [Watch NeoPlay Demo](./demo/neoplay8126.mp4)
